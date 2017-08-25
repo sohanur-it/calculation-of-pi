@@ -46,4 +46,4 @@ def parallelCal():
 
 if __name__ == "__main__":
 	parallelCal()
-	#nonP()
+	
