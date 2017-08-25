@@ -43,17 +43,6 @@ def parallelCal():
 	PI = 4.0 * ( 1 - negSUM + posSUM )
 	print("\tPI            =", PI, "calculated in", round(time.time()-stTime, 2),'secs\n')
 
-def nonP():
-	st = time.time()
-	s1 = 0.0
-	s2 = 0.0
-	for i, j in zip(range(3, 300000001, 4), range(5, 300000001, 4)):
-		s1 += 1.0 / float(i)
-		s2 += 1.0 / float(j)
-
-	print((4.0 * (1-s1+s2)))
-	print((time.time()-st))
-
 
 if __name__ == "__main__":
 	parallelCal()
